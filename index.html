@@ -533,6 +533,7 @@ nav.scrolled {
   background: var(--yellow);
   border-radius: 50%;
   opacity: 0.06;
+  pointer-events: none;
 }
 .feature-inner {
   max-width: 1160px;
@@ -552,6 +553,8 @@ nav.scrolled {
   line-height: 1.0;
   letter-spacing: -2px;
   margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
 }
 .feature-title em {
   font-style: italic;

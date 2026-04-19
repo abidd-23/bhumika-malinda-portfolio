@@ -232,7 +232,8 @@ nav.scrolled {
   font-style: italic;
   color: var(--ink);
 }
-.hello-wave { font-style: normal; }
+.section-eyebrow.no-line::before { display: none; }
+
 
 .about-body {
   font-size: 15px;
@@ -612,29 +613,47 @@ nav.scrolled {
 .brands-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 24px;
   margin-top: 50px;
+}
+.brand-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .brand-pill {
   background: var(--white);
-  border-radius: 100px;
-  padding: 10px 22px;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--ink);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
   box-shadow: var(--shadow-sm);
   transition: all 0.2s;
   cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 .brand-pill:hover {
-  background: var(--ink);
-  color: white;
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
 .brand-pill.featured {
-  background: var(--ink);
-  color: white;
+  background: var(--white);
+}
+.brand-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  text-align: center;
+  white-space: nowrap;
 }
 
 /* ─── SKILLS ─── */
@@ -933,8 +952,8 @@ nav.scrolled {
 
   /* Brands */
   .brands-section { padding: 60px 20px 56px; }
-  .brands-cloud { gap: 8px; margin-top: 36px; }
-  .brand-pill { font-size: 12px; padding: 8px 16px; }
+  .brands-cloud { gap: 12px; margin-top: 36px; }
+  .brand-pill { padding: 10px 12px; }
 
   /* Skills */
   .skills-section { padding: 60px 20px 60px; }
@@ -978,7 +997,6 @@ nav.scrolled {
   </button>
   <ul class="nav-links" id="navLinks">
     <li><a href="#about" class="active">About Me</a></li>
-    <li><a href="#experience">Curriculum Vitae</a></li>
     <li><a href="#feature">Works</a></li>
   </ul>
 </nav>
@@ -1026,30 +1044,24 @@ nav.scrolled {
     <div class="hero-deco">
       <svg viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6 22 Q12 8 20 14 Q26 18 30 6" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-        <path d="M34 10 L38 6 L42 10" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M24 8 L29 4 L34 8" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
         <circle cx="8" cy="22" r="2" fill="#1A1A1A"/>
       </svg>
     </div>
 
     <div class="hero-title">
-      PORTFOLIO<span class="asterisk">*</span>
+      PORTFOLIO
     </div>
 
     <div class="hero-arrow-row">
-      <div class="hero-arrow">
-        <svg viewBox="0 0 180 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="0" y1="9" x2="162" y2="9" stroke="#1A1A1A" stroke-width="1.5"/>
-          <path d="M156 2 L172 9 L156 16" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        </svg>
-      </div>
       <div class="year-pill">2026</div>
     </div>
 
     <div class="scroll-hint">
       <span>Scroll down to view</span>
-      <svg width="12" height="20" viewBox="0 0 12 20" fill="none">
-        <line x1="6" y1="0" x2="6" y2="16" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M1 11 L6 16 L11 11" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg width="14" height="48" viewBox="0 0 14 48" fill="none">
+        <line x1="7" y1="0" x2="7" y2="40" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M1 33 L7 40 L13 33" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </div>
   </div>
@@ -1061,16 +1073,16 @@ nav.scrolled {
 
     <!-- left text -->
     <div class="about-left">
-      <div class="section-eyebrow">About Me</div>
+      <div class="section-eyebrow no-line">About Me</div>
 
       <div class="hello-text">
-        Hello <span class="hello-wave">👋</span><br>
+        Hello <span class="hello-wave">🙋‍♀️</span><br>
         I'm <em>Bhumika!</em>
       </div>
 
       <div class="about-body">
-        A <strong>Social Media Specialist & Community Builder</strong> who turns sensitive topics into viral conversations. Co-founder of Sex Shiksha — India's largest sex education community with <strong>500M+ organic views</strong>. Currently making waves at <strong>Pee Safe</strong>, Gurugram.<br><br>
-        7+ years scaling brands, driving organic growth, and building communities that actually matter.
+        A <strong>Creative Strategist and Social Media Growth Expert</strong> who turns sensitive topics into viral conversations. Co-founder of Sex Shiksha — India's largest sex education community with <strong>1M+ Subscribers and 500M+ organic views</strong>. Currently making waves at <strong>Pee Safe</strong>.<br><br>
+        6+ years scaling brands, driving organic growth, and building communities that actually matter.
       </div>
 
       <div class="contact-bar">
@@ -1141,111 +1153,13 @@ nav.scrolled {
   </div>
 </section>
 
-<!-- ─── EXPERIENCE ─── -->
-<section class="exp-section" id="experience">
-  <div class="exp-inner">
-
-    <div class="section-header">
-      <div>
-        <div class="section-eyebrow">Curriculum Vitae</div>
-        <div class="section-big-title">Work <em>Experience</em></div>
-      </div>
-      <div class="section-count">05 Roles</div>
-    </div>
-
-    <div class="exp-list">
-
-      <div class="exp-row">
-        <div class="exp-row-date">Feb 2026 – Present</div>
-        <div class="exp-row-main">
-          <div class="exp-row-role">Social Media Specialist</div>
-          <div class="exp-row-company">🛡️ Pee Safe · Gurugram · Full-time</div>
-          <ul class="exp-row-bullets">
-            <li>Leading social & influencer marketing for India's <strong>#1 personal hygiene brand</strong>.</li>
-          </ul>
-        </div>
-        <div class="exp-row-tags">
-          <div class="exp-tag">Current</div>
-          <div class="exp-tag">Full-time</div>
-        </div>
-      </div>
-
-      <div class="exp-row">
-        <div class="exp-row-date">Sep – Dec 2025</div>
-        <div class="exp-row-main">
-          <div class="exp-row-role">Senior Marketing Executive</div>
-          <div class="exp-row-company">⚡ Jolt App</div>
-          <ul class="exp-row-bullets">
-            <li><strong>1.1M+ organic Reels views</strong> in 30 days — zero paid spend.</li>
-            <li>TikTok: <strong>2 → 450+ followers</strong> in one month; 488% growth.</li>
-            <li>Single video hitting <strong>400K+ views</strong> organically.</li>
-          </ul>
-        </div>
-        <div class="exp-row-tags">
-          <div class="exp-tag">1.1M+ Views</div>
-          <div class="exp-tag">TikTok Growth</div>
-        </div>
-      </div>
-
-      <div class="exp-row">
-        <div class="exp-row-date">Dec 2024 – Jul 2025</div>
-        <div class="exp-row-main">
-          <div class="exp-row-role">Social Media & Community Manager</div>
-          <div class="exp-row-company">🎥 IMbesharam.com · Remote</div>
-          <ul class="exp-row-bullets">
-            <li>Led UGC end-to-end — ideation → scripting → multi-city shoots → publishing.</li>
-            <li>Scaled YouTube <strong>200 → 1K+ subscribers</strong> in 30 days organically.</li>
-            <li>Delivered videos hitting <strong>30K, 60K & 100K+</strong> organic views.</li>
-          </ul>
-        </div>
-        <div class="exp-row-tags">
-          <div class="exp-tag">YouTube</div>
-          <div class="exp-tag">UGC</div>
-        </div>
-      </div>
-
-      <div class="exp-row">
-        <div class="exp-row-date">Nov 2021 – Dec 2024</div>
-        <div class="exp-row-main">
-          <div class="exp-row-role">Chief Operating Officer</div>
-          <div class="exp-row-company">🏢 Canopus Media · New Delhi</div>
-          <ul class="exp-row-bullets">
-            <li>Led global marketing agency; connected <strong>200+ brands</strong> with <strong>10K+ influencers</strong>.</li>
-            <li>Grew from Business Dev Executive → COO in 3 years.</li>
-          </ul>
-        </div>
-        <div class="exp-row-tags">
-          <div class="exp-tag">200+ Brands</div>
-          <div class="exp-tag">COO</div>
-        </div>
-      </div>
-
-      <div class="exp-row">
-        <div class="exp-row-date">Mar 2019 – Mar 2021</div>
-        <div class="exp-row-main">
-          <div class="exp-row-role">Influencer Marketing Executive</div>
-          <div class="exp-row-company">🌍 Viral Nation · Remote · Canada</div>
-          <ul class="exp-row-bullets">
-            <li>Executed global influencer campaigns for international brands at scale.</li>
-          </ul>
-        </div>
-        <div class="exp-row-tags">
-          <div class="exp-tag">Global</div>
-          <div class="exp-tag">Influencer Mktg</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <!-- ─── SEX SHIKSHA FEATURE ─── -->
 <section class="feature-section" id="feature">
   <div class="feature-inner">
     <div>
-      <div class="section-eyebrow">Flagship Project</div>
+      <div class="section-eyebrow no-line">Flagship Project</div>
       <div class="feature-title">
-        Sex<br><em>Shiksha</em><br>Co-Founder
+        <a href="https://youtube.com/@sexshiksha?si=8TYalqpn7A4TrimZ" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;"></a>Sex<br><em>Shiksha</em></a><br>Co-Founder
       </div>
       <div class="feature-body">
         Co-founded India's <strong>largest sex education community</strong> in one of the most algorithm-hostile content categories on the internet. Built 0 to <strong>500M+ organic views</strong>, navigated shadowbans, and recovered to 250K+ followers.<br><br>
@@ -1258,16 +1172,22 @@ nav.scrolled {
         <div class="metric-l">Total organic views across platforms</div>
       </div>
       <div class="metric-card">
-        <div class="metric-n">5.2M+</div>
-        <div class="metric-l">Single video views</div>
+        <a href="https://www.instagram.com/reel/C_DbtXcyzPZ/?igsh=M3B3cTd0OXcyeml4" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;display:block;">
+          <div class="metric-n">5.2M+</div>
+          <div class="metric-l">Single video views</div>
+        </a>
       </div>
       <div class="metric-card">
-        <div class="metric-n">3.4M+</div>
-        <div class="metric-l">Viral video 2</div>
+        <a href="https://www.instagram.com/reel/C_A9FEPtubJ/?igsh=MWFidW81eTd6aDgyag==" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;display:block;">
+          <div class="metric-n">3.4M+</div>
+          <div class="metric-l">Viral video 2</div>
+        </a>
       </div>
       <div class="metric-card">
-        <div class="metric-n">250K+</div>
-        <div class="metric-l">Instagram community</div>
+        <a href="https://www.instagram.com/secs.shiksha?igsh=c2w0eDl4MGN5cm9t" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;display:block;">
+          <div class="metric-n">250K+</div>
+          <div class="metric-l">Instagram community</div>
+        </a>
       </div>
       <div class="metric-card">
         <div class="metric-n">10M+</div>
@@ -1280,31 +1200,66 @@ nav.scrolled {
 <!-- ─── BRANDS ─── -->
 <section class="brands-section" id="brands">
   <div class="brands-inner">
-    <div class="section-eyebrow">Collaborations</div>
+    <div class="section-eyebrow no-line">Collaborations</div>
     <div class="section-big-title">Brands I've <em>Partnered</em> With</div>
-    <div class="brands-cloud">
-      <div class="brand-pill featured">Durex</div>
-      <div class="brand-pill featured">MyMuse</div>
-      <div class="brand-pill featured">Bold Care</div>
-      <div class="brand-pill">Skore</div>
-      <div class="brand-pill">Femisafe</div>
-      <div class="brand-pill">Mojocare</div>
-      <div class="brand-pill">Well Being Nutrition</div>
-      <div class="brand-pill">Love Depot</div>
-      <div class="brand-pill">Fast&amp;Up</div>
-      <div class="brand-pill">Sassiest</div>
-      <div class="brand-pill">IMbesharam</div>
-      <div class="brand-pill">Sesa Care</div>
-      <div class="brand-pill">Mischief</div>
-      <div class="brand-pill featured">Pee Safe</div>
-    </div>
+    <div class="brands-cloud" id="brandsCloud"></div>
+    <script>
+    (function() {
+      const brands = [
+        { name: 'Durex',                logo: 'Durex_logo.svg',         featured: true  },
+        { name: 'MyMuse',               logo: 'myMuse.png',             featured: true  },
+        { name: 'Bold Care',            logo: 'boldCare.png',           featured: true  },
+        { name: 'Skore',                logo: 'skore.png',              featured: false },
+        { name: 'Femisafe',             logo: 'femisafe.png',           featured: false },
+        { name: 'Mojocare',             logo: 'mojoCare.png',           featured: false, smallIcon: true },
+        { name: 'Well Being Nutrition', logo: 'wellBeing.png',          featured: false },
+        { name: 'Love Depot',           logo: 'lovedepot.png',          featured: false },
+        { name: 'Fast&Up',              logo: 'fast&up.png',            featured: false },
+        { name: 'Sassiest',             logo: 'sassiest.png',           featured: false },
+        { name: 'IMbesharam',           logo: 'IMbesharam.svg',         featured: false },
+        { name: 'Sesa Care',            logo: 'sesa.png',               featured: false },
+        { name: 'Mischief',             logo: 'mscheif.png',            featured: false },
+        { name: 'Allo Health',          logo: 'alloHealth.png',         featured: false },
+        { name: 'Pee Safe',             logo: 'peesafe.png',            featured: true, smallIcon: true  },
+      ];
+
+      const cloud = document.getElementById('brandsCloud');
+
+      brands.forEach(b => {
+        const item = document.createElement('div');
+        item.className = 'brand-item';
+
+        const pill = document.createElement('div');
+        pill.className = 'brand-pill' + (b.featured ? ' featured' : '');
+
+        if (b.logo) {
+          const img = document.createElement('img');
+          img.className = 'brand-logo';
+          img.alt = b.name;
+          img.src = b.logo;
+          if (b.smallIcon) { img.style.width = '36px'; img.style.height = '36px'; }
+          img.onerror = function() { this.remove(); };
+          pill.appendChild(img);
+        }
+
+        const label = document.createElement('span');
+        label.className = 'brand-name';
+        label.textContent = b.name;
+
+        item.appendChild(pill);
+        item.appendChild(label);
+        cloud.appendChild(item);
+      });
+
+    })();
+    </script>
   </div>
 </section>
 
 <!-- ─── SKILLS ─── -->
 <section class="skills-section" id="skills">
   <div class="skills-inner">
-    <div class="section-eyebrow">Capabilities</div>
+    <div class="section-eyebrow no-line">Capabilities</div>
     <div class="section-big-title">What I <em>Bring</em></div>
     <div class="skills-grid">
       <div class="skill-card">
@@ -1323,7 +1278,7 @@ nav.scrolled {
         <div class="skill-card-title">Growth & Strategy</div>
         <ul class="skill-list">
           <li>Organic growth systems</li>
-          <li>Community building from 0</li>
+          <li>Community building from scratch</li>
           <li>Algorithm & platform strategy</li>
           <li>Shadowban recovery</li>
           <li>Brand scaling</li>
